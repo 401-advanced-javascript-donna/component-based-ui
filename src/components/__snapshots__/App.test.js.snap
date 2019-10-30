@@ -2,7 +2,7 @@
 
 exports[`App component renders App 1`] = `
 <Fragment>
-    <Header />
+<Header/>
     <Character
       img="https://rickandmortyapi.com/api/character/avatar/1.jpeg"
       name="Rick Sanchez"
