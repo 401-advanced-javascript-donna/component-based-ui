@@ -2,12 +2,12 @@ import React from 'react';
 import Header from './Header';
 import Footer from './Footer';
 import Character from './Character';
-import styles from './App';
+import styles from './App.css';
 
 const App = () => (
   <>
-    <Header />
-    <div>
+    <Header className={styles.App} />
+    <div className={styles.App}>
       <Character
         img="https://rickandmortyapi.com/api/character/avatar/1.jpeg"
         name="Rick Sanchez"

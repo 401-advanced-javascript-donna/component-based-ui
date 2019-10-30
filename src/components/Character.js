@@ -1,18 +1,20 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styles from './Character.css'
 
 // eslint-disable-next-line react/prop-types
 const Character = ({ img, name, species }) => (
-  <dl>
-    <dt>img</dt>
-    <dd><img src={img}></img></dd>
+  <div className={styles.Character}>
+    <dl>
+      <dd><img src={img}></img></dd>
 
-    <dt>Name</dt>
-    <dd>{name}</dd>
+      <dt>Name: </dt>
+      <dd>{name}</dd>
 
-    <dt>Species</dt>
-    <dd>{species}</dd>
-  </dl>
+      <dt>Species: </dt>
+      <dd>{species}</dd>
+    </dl>
+  </div>
 );
 
 Character.propType = {
